@@ -36,7 +36,7 @@ setup(name='sparc.testing',
           'zope.interface',
           'zope.component',
           'zope.security',
-          'z3c.testsetup'
+          'zope.annotation'
           # -*- Extra requirements: -*-
       ],
       tests_require=[

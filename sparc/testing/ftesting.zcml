@@ -6,6 +6,7 @@
     <!-- Required ZCA Components -->
     <include package="zope.component" />
     <include package="zope.security" />
+    <include package="zope.annotation" />
 
     <!-- All Standard Sparc Components -->
     <include package="sparc.asset" />
@@ -16,9 +17,9 @@
     <include package="sparc.db" />
     <include package="sparc.entity" />
     <include package="sparc.event" />
-    <include package="sparc.i18n" />
-    <include package="sparc.login" />
-    <include package="sparc.pulish" />
+    <!--<include package="sparc.i18n" />-->
+    <!--<include package="sparc.login" />-->
+    <include package="sparc.publish" />
     <include package="sparc.utils" />
     
     <!-- Some Optional (testing) Sparc Components -->
