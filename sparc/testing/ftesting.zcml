@@ -24,5 +24,6 @@
     
     <!-- Some Optional (testing) Sparc Components -->
     <include package="sparc.db.sql.sa" file="memory.zcml" />
+    <include package="sparc.asset.system.tests" />
 
 </configure>

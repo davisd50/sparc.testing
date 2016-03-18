@@ -23,7 +23,10 @@ class test_suite_mixin(object):
             pass # no docfile tests
         
         try:
-            doctest = DocTestSuite(package+'.'+module)
+            if module:
+                doctest = DocTestSuite(package+'.'+module)
+            else:
+                doctest = DocTestSuite(package+'.'+module)
             doctest.layer = self.layer
             suite.addTest(doctest)
         except ValueError:
