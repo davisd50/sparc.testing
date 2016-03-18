@@ -34,6 +34,7 @@ setup(name='sparc.testing',
       install_requires=[
           'setuptools',
           'zope.testing', # required for cleanup()
+          'zope.testrunner', # required for stand-alone-file test executions
           'zope.interface',
           'zope.component',
           'zope.security',
