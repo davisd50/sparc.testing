@@ -33,6 +33,7 @@ setup(name='sparc.testing',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'zope.testing', # required for cleanup()
           'zope.interface',
           'zope.component',
           'zope.security',
