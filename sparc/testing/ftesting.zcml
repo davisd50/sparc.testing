@@ -9,6 +9,7 @@
     <include package="zope.annotation" />
 
     <!-- All Standard Sparc Components -->
+    <include package="sparc.apps.cache" />
     <include package="sparc.asset" />
     <include package="sparc.aws" />
     <include package="sparc.cache" />
