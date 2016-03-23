@@ -9,15 +9,15 @@ class test_suite_mixin(object):
     module = 'module_name_being_tested'
     layer = SPARC_INTEGRATION_LAYER # default
     
-    def __new__(self):
-        package = self.package
-        module = self.module
+    def __new__(cls):
+        package = cls.package
+        module = cls.module
         
         suite = unittest.TestSuite()
         try:
             docfiletest = DocFileSuite(module+'.txt',
                                                 package=import_module(package))
-            docfiletest.layer = self.layer
+            docfiletest.layer = cls.layer
             suite.addTest(docfiletest)
         except IOError:
             pass # no docfile tests
@@ -27,7 +27,7 @@ class test_suite_mixin(object):
                 doctest = DocTestSuite(package+'.'+module)
             else:
                 doctest = DocTestSuite(package+'.'+module)
-            doctest.layer = self.layer
+            doctest.layer = cls.layer
             suite.addTest(doctest)
         except ValueError:
             pass # no doc tests
