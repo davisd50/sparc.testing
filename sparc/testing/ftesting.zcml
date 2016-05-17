@@ -13,6 +13,7 @@
     <include package="sparc.asset" />
     <include package="sparc.aws" />
     <include package="sparc.cache" />
+    <include package="sparc.catalog" />
     <include package="sparc.common" />
     <include package="sparc.configuration" />
     <include package="sparc.db" />
