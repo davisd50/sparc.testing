@@ -20,6 +20,7 @@
     <include package="sparc.event" />
     <!--<include package="sparc.i18n" />-->
     <!--<include package="sparc.login" />-->
+    <include package="sparc.organization" />
     <include package="sparc.publish" />
     <include package="sparc.utils" />
     
