@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.0.1'
+version = '0.0.2'
 
 setup(name='sparc.testing',
       version=version,
@@ -15,8 +15,10 @@ setup(name='sparc.testing',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
+        'Framework :: Zope3',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.7',
+        "Programming Language :: Python :: 3"
       ],
       keywords=['zca'],
       author='David Davis',
@@ -37,9 +39,7 @@ setup(name='sparc.testing',
           'zope.testrunner', # required for stand-alone-file test executions
           'zope.interface',
           'zope.component',
-          'zope.security',
-          'zope.annotation',
-          'sparc.configuration'
+          'zope.schema' # needed for vocabulary registry
           # -*- Extra requirements: -*-
       ],
       tests_require=[

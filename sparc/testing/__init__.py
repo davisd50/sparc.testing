@@ -1,5 +1,4 @@
-import sys
-from sparc.logging import logging
+import logging
 
 logger = logging.getLogger() # root
 def enableLogger(level = logging.DEBUG):

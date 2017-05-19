@@ -2,7 +2,7 @@ import unittest
 from importlib import import_module
 from doctest import DocTestSuite
 from doctest import DocFileSuite
-from sparc.testing.testlayer import SPARC_INTEGRATION_LAYER
+from .testlayer import SPARC_INTEGRATION_LAYER
 
 class test_suite_mixin(object):
     package = 'define.to.dotted.package.being.tested'
