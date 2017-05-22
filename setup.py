@@ -41,7 +41,11 @@ setup(name='sparc.testing',
           'zope.schema' # needed for vocabulary registry
       ],
       extras_require = {
-          'testing': ['zope.component[test, testing, zcml, security]']
+          'zcml': ['zope.configuration',
+                   'zope.i18nmessageid'],
+          'security': ['zope.location',
+                       'zope.proxy',
+                       'zope.security']
       },
       entry_points="""
       # -*- Entry points: -*-
