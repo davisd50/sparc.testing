@@ -2,6 +2,5 @@
 
     <include package="zope.component" />
     <include package="zope.security" />
-    <include package="zope.annotation" />
 
 </configure>

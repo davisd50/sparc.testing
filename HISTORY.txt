@@ -12,3 +12,8 @@ sparc.testing
 
 * simplify package dependency requirements
 * add Travis CI configuration
+
+0.0.3
+++++++++++++++++++
+
+* update package setup for sane extras

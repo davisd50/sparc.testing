@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '0.0.2'
 
@@ -40,11 +39,10 @@ setup(name='sparc.testing',
           'zope.interface',
           'zope.component',
           'zope.schema' # needed for vocabulary registry
-          # -*- Extra requirements: -*-
       ],
-      tests_require=[
-          #packages needed for testing #
-      ],
+      extras_require = {
+          'testing': ['zope.component[test, testing, zcml, security]']
+      },
       entry_points="""
       # -*- Entry points: -*-
       """,

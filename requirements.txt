@@ -1,6 +1,0 @@
-setuptools
-zope.testing
-zope.testrunner
-zope.interface
-zope.component
-zope.schema
