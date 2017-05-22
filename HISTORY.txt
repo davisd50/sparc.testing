@@ -17,3 +17,8 @@ sparc.testing
 ++++++++++++++++++
 
 * update package setup for sane extras
+
+0.0.3
+++++++++++++++++++
+
+* add security and zcml to setup extras_require
